@@ -1,9 +1,9 @@
-/**
- * @format
- */
+import { AppRegistry, LogBox } from 'react-native';
+import { name as appName } from './app.json';
+import App from './src/app';
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+LogBox.ignoreLogs([
+  'Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle',
+]);
 
 AppRegistry.registerComponent(appName, () => App);
