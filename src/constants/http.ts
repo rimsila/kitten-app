@@ -1,5 +1,5 @@
 export const apiUrl = {
-  baseUrl: 'd',
+  baseUrl: 'https://placekitten.com',
 };
 
 export enum HTTP_STATUS {

@@ -3,24 +3,24 @@ import Button from 'components/Button';
 import GridView from 'components/List/GridView';
 import { useAppTheme } from 'hooks/useTheme';
 import React from 'react';
-import useKitten from '../useKitten';
+import FastImage from 'react-native-fast-image';
+import useKitten from './useKittenList';
 
-const KittenItemList = () => {
+const KittenList = () => {
   const { spacing } = useAppTheme();
-  const { filterData, setFilterValue, filterValue } = useKitten();
+  const { kittenList, navigateKittenItem } = useKitten();
   const cardOuterHeight = 150;
 
   return (
-    <GridView<typeof filterData[0]>
-      data={filterData}
+    <GridView<typeof kittenList[0]>
+      data={kittenList}
       numColumns={1}
       renderItem={({ item }) => {
         return (
           <Button
             borderWidth={1}
-            bg={item.value === filterValue ? 'fgSuccess' : 'fgSubdued'}
             height={cardOuterHeight}
-            onPress={() => setFilterValue(item.value)}
+            onPress={() => navigateKittenItem(item)}
             marginHorizontal="xs"
             borderRadius="s"
             alignItems="center"
@@ -35,21 +35,19 @@ const KittenItemList = () => {
               justifyContent="center"
               alignItems="center"
             >
-              <CusText variant="subheader" color="fgRegular">
-                kkk
-              </CusText>
+              <FastImage style={{ height: '100%', width: '100%' }} source={{ uri: item?.img }} />
             </CusBox>
             <CusText variant="body" color="fgRegular">
-              fff
+              {item?.name}
             </CusText>
           </Button>
         );
       }}
-      bottomSpacing={spacing.s}
+      bottomSpacing={spacing.m}
       rightSpacing={spacing.s}
       keyExtractor={(_, i) => String(i)}
     />
   );
 };
 
-export default KittenItemList;
+export default KittenList;

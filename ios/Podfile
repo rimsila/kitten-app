@@ -3,6 +3,8 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '11.0'
 
+
+
 target 'Kitten' do
   config = use_native_modules!
 
@@ -23,7 +25,12 @@ target 'Kitten' do
   # you should disable the next line.
   use_flipper!()
 
+  use_flipper!
   post_install do |installer|
-    react_native_post_install(installer)
+    flipper_post_install(installer)
+    installer.pods_project.build_configurations.each do |config|
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
+
   end
 end

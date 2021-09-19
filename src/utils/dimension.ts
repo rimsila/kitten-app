@@ -1,4 +1,4 @@
-import { Dimensions } from 'react-native';
+import { Dimensions, Platform, StatusBar } from 'react-native';
 import { spacingSize } from 'themes';
 
 export const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -29,3 +29,41 @@ export const getGridItemMarginRight = ({
 export const pxToNum = (px: string) => {
   return parseInt(px.replace('px', ''), 10);
 };
+
+export function isIphoneX() {
+  const dimen = Dimensions.get('window');
+  return (
+    Platform.OS === 'ios' &&
+    !Platform.isPad &&
+    !Platform.isTVOS &&
+    (dimen.height === 780 ||
+      dimen.width === 780 ||
+      dimen.height === 812 ||
+      dimen.width === 812 ||
+      dimen.height === 844 ||
+      dimen.width === 844 ||
+      dimen.height === 896 ||
+      dimen.width === 896 ||
+      dimen.height === 926 ||
+      dimen.width === 926)
+  );
+}
+
+export function ifIphoneX<T extends Object>(iphoneXStyle: T, regularStyle: T): T {
+  if (isIphoneX()) {
+    return iphoneXStyle;
+  }
+  return regularStyle;
+}
+
+export function getStatusBarHeight(safe: boolean) {
+  return Platform.select({
+    ios: ifIphoneX(safe ? 44 : 30, 20),
+    android: StatusBar.currentHeight,
+    default: 0,
+  });
+}
+
+export function getBottomSpace() {
+  return isIphoneX() ? 34 : 0;
+}

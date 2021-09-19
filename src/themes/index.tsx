@@ -14,6 +14,8 @@ export const spacingSize = {
   l: pxToNum(tokens.spacingLoose),
   xl: pxToNum(tokens.spacingExtraLoose),
   xxl: 2 * pxToNum(tokens.spacingExtraLoose),
+  '40': 40,
+  '60': 40,
 };
 
 const lightTheme = createTheme({

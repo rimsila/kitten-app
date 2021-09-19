@@ -1,4 +1,4 @@
-import { NavigationContainerRef, Route, RouteProp, StackActions } from '@react-navigation/native';
+import { NavigationContainerRef, RouteProp, StackActions } from '@react-navigation/native';
 import * as React from 'react';
 import { AppStackParams } from './AppNavigation';
 
@@ -18,15 +18,28 @@ function navigateReplaceStack<T extends keyof AppStackParams>(
   navigationRef.current?.dispatch(StackActions.replace(name, param));
 }
 
-function goBack() {
-  navigationRef.current?.goBack();
-}
-
 function isCanGoBack() {
   return navigationRef.current?.canGoBack();
 }
 
-function getCurrentRoute<T extends Object>(): Route<keyof AppStackParams, T> {
-  return navigationRef.current?.getCurrentRoute() as any;
+function goBack() {
+  if (isCanGoBack()) {
+    navigationRef.current?.goBack();
+  }
 }
+
+function getCurrentRoute<T extends keyof AppStackParams>(
+  name: RouteProp<AppStackParams, T>['name'],
+  params?: RouteProp<AppStackParams, T>['params'],
+  path?: RouteProp<AppStackParams, T>['path'],
+  key?: RouteProp<AppStackParams, T>['key']
+) {
+  return navigationRef.current?.getCurrentRoute() as unknown as {
+    name: typeof name;
+    params: typeof params;
+    path: typeof path;
+    key: typeof key;
+  };
+}
+
 export { navigateStack, goBack, navigationRef, getCurrentRoute, navigateReplaceStack, isCanGoBack };

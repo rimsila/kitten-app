@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import persistCombineReducers from 'redux-persist/lib/persistCombineReducers';
-import mockReducer from './mockReducer';
+import persistReducer from 'redux-persist/lib/persistReducer';
+import kittenSlice from './kittenSlice';
 
 /**
  * common persist nested store
@@ -21,19 +22,17 @@ const persistConfig = {
   whitelist: [],
 };
 
-// const appStorePersistConfig = {
-//   ...commonConfig,
-//   key: 'appStore',
-//   //ignore in appStore
-//   whitelist: ['i18nCode', 'themeType', 'isDarkMode'],
-// };
+const appStorePersistConfig = {
+  ...commonConfig,
+  key: 'kittenSlice',
+  whitelist: ['kittenList'],
+};
 
 /**
  * all reducer here
  */
 const allReducers = {
-  // appStore: persistReducer(appStorePersistConfig, appSlice),
-  mockStore: mockReducer,
+  kittenSlice: persistReducer(appStorePersistConfig, kittenSlice),
 };
 
 export default persistCombineReducers(persistConfig, allReducers);

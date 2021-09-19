@@ -1,5 +1,7 @@
+import { CusBox, CusText } from 'components';
 import React from 'react';
 import { FlatList, FlatListProps, ListRenderItem, StyleProp, View, ViewStyle } from 'react-native';
+import FastImage from 'react-native-fast-image';
 import { getGridItemMarginRight, getGridItemWidth, SCREEN_WIDTH } from 'utils/dimension';
 
 export interface IGridViewProps<T> extends FlatListProps<T> {
@@ -42,6 +44,14 @@ function GridView<T>(props: IGridViewProps<T>) {
   return (
     <>
       <FlatList<T>
+        ListEmptyComponent={
+          <>
+            <CusBox justifyContent="center" alignItems="center">
+              <FastImage source={require('assets/images/emptyPhoto.png')} style={{ width: 100, height: 100 }} />
+              <CusText color="fgSubdued">There is no data</CusText>
+            </CusBox>
+          </>
+        }
         numColumns={numColumns}
         style={[containerStyle]}
         ItemSeparatorComponent={() => <View style={{ height: bottomSpacing }} />}
