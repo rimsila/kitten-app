@@ -5,8 +5,8 @@ import FastImage from 'react-native-fast-image';
 import { getGridItemMarginRight, getGridItemWidth, SCREEN_WIDTH } from 'utils/dimension';
 
 export interface IGridViewProps<T> extends FlatListProps<T> {
-  numColumns: number;
-  bottomSpacing: number;
+  numColumns?: number;
+  bottomSpacing?: number;
   rightSpacing?: number;
   containerStyle?: StyleProp<ViewStyle>;
   childContainerStyle?: StyleProp<ViewStyle>;

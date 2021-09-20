@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1632071488992" clover="3.2.0">
+  <project timestamp="1632071488992" name="All files">
+    <metrics statements="108" coveredstatements="68" conditionals="52" coveredconditionals="10" methods="39" coveredmethods="12" elements="199" coveredelements="90" complexity="0" loc="108" ncloc="108" packages="16" files="22" classes="22"/>
+    <package name="Kitten">
+      <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="assetsTransformer.js" path="/Users/sila/Documents/Project/next-dev-team/Kitten/assetsTransformer.js">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.components">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/components/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="Kitten.src.components.Box">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/components/Box/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.components.Button">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/components/Button/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.components.Card">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/components/Card/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.components.FeedBack">
+      <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Spining.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/components/FeedBack/Spining.tsx">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.components.List">
+      <metrics statements="6" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="2"/>
+      <file name="GridView.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/components/List/GridView.tsx">
+        <metrics statements="6" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="2"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.components.Text">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/components/Text/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.constants">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="http.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/constants/http.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.hooks">
+      <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="useTheme.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/hooks/useTheme.tsx">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.store">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="rootMiddleware.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/store/rootMiddleware.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="rootReducer.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/store/rootReducer.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+      </file>
+      <file name="store.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/store/store.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.store.kittenSlice">
+      <metrics statements="24" coveredstatements="10" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="1"/>
+      <file name="index.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/store/kittenSlice/index.ts">
+        <metrics statements="24" coveredstatements="10" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="1"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="85" count="3" type="stmt"/>
+        <line num="87" count="3" type="stmt"/>
+        <line num="88" count="3" type="stmt"/>
+        <line num="89" count="3" type="stmt"/>
+        <line num="90" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.test">
+      <metrics statements="7" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="4" coveredmethods="2"/>
+      <file name="test-utils.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/test/test-utils.tsx">
+        <metrics statements="7" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="4" coveredmethods="2"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="cond" truecount="0" falsecount="3"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.test.mocks">
+      <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="handlers.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/test/mocks/handlers.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="server.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/test/mocks/server.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.themes">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/themes/index.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="48" count="5" type="stmt"/>
+        <line num="103" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="Kitten.src.utils">
+      <metrics statements="36" coveredstatements="19" conditionals="39" coveredconditionals="4" methods="15" coveredmethods="5"/>
+      <file name="dimension.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/utils/dimension.ts">
+        <metrics statements="16" coveredstatements="8" conditionals="28" coveredconditionals="1" methods="8" coveredmethods="2"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="0" falsecount="3"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="68" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="mockData.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/utils/mockData.ts">
+        <metrics statements="9" coveredstatements="7" conditionals="7" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="20" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="23" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+      </file>
+      <file name="request.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/utils/request.ts">
+        <metrics statements="10" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+      </file>
+      <file name="string.ts" path="/Users/sila/Documents/Project/next-dev-team/Kitten/src/utils/string.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

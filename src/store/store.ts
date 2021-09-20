@@ -1,5 +1,6 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 import { persistStore } from 'redux-persist';
+import rootMiddleware from './rootMiddleware';
 import rootReducer from './rootReducer';
 
 export const store = configureStore({
@@ -7,7 +8,7 @@ export const store = configureStore({
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: false,
-    }),
+    }).prepend(rootMiddleware),
 });
 
 export const persistor = persistStore(store);

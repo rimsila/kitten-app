@@ -26,7 +26,7 @@ export const getGridItemMarginRight = ({
   spacing?: number;
 }) => ((index + 1) / numColumns === 0 ? 0 : spacing);
 
-export const pxToNum = (px: string) => {
+export const pxToNum = (px = '0px') => {
   return parseInt(px.replace('px', ''), 10);
 };
 

@@ -7,7 +7,15 @@ export const fakerData = (isDebug?: boolean) => {
   return faker;
 };
 
-export const genMockArr = ({ data, isDebug, length = 6 }: { data: () => void; isDebug?: boolean; length?: number }) => {
+export function genMockArr<T>({
+  data,
+  isDebug,
+  length = 6,
+}: {
+  data: () => T;
+  isDebug?: boolean;
+  length?: number;
+}): T[] {
   let getArr;
   if (data) {
     getArr = Array.from({ length }, data);
@@ -15,5 +23,5 @@ export const genMockArr = ({ data, isDebug, length = 6 }: { data: () => void; is
   if (isDebug) {
     console.log('genArr', getArr);
   }
-  return getArr as [];
-};
+  return getArr as any;
+}
