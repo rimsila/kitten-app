@@ -16,7 +16,7 @@
   - in Kitten item screen render kitten image at the top followed by it’s name and display kitten description below (Lorem Ipsum).
 
 - BONUS
-  - Generate signed .apk file, release version in root folder: **app-release.apk**
+  - Generate signed .apk file, release version in root folder: [app-release.apk](https://github.com/rimsila/kitten-app/blob/main/app-release.apk)
   - Write tests for some react-native component and utils
   - Store kitten data in redux state and support offline mode and auto refetch when online
 
