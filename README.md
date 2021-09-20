@@ -20,7 +20,7 @@
   - Write tests for some react-native component and utils
   - Store kitten data in redux state and support offline mode and auto refetch when online
 
-I have tried at my best in 2 days to completed. Sorry for a bit late submit due to I have very busy in working days, I have try to setup React Native architecture with latest and following best practice.
+I have tried at my best in a few days to completed. Sorry for a bit late submit due to I have very busy in working days, I have try to setup React Native architecture with latest and following best practice.
 
 Thank you for your giving me the great opportunity to try to do KittenApp with React native.
 
