@@ -56,7 +56,7 @@ KittenApp is React Native application. This project is configured with redux, re
 5. Start developments:
 
    - On Android:
-     - Run `react-native run-android` or Use Android Studio (Recommended)
+     - Run `react-native run-android` or Use Android Studio
    - On iOS:
      - Run `yarn react-native run-ios` 
  Or
