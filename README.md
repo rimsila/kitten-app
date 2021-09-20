@@ -26,7 +26,7 @@ Thank you for your giving me the great opportunity to try to do KittenApp with R
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.65.1-green.svg)](https://facebook.github.io/react-native/) [![React Navigation V5](https://img.shields.io/badge/React%20Navigation-v6.0.2-blue.svg)](https://reactnavigation.org/)
 
-KittenApp is React Native application. This project is configured with redux, redux thunk with redux-tookit and redux persist. Uses latest version of react-navigation (v6) and using Restyle for
+KittenApp is React Native application. This project is configured with redux, redux thunk with redux-tookit and redux persist. Uses latest version of react-navigation (v6) and using Restyle for type-enforced system to design UI components
 
 ## Technologies Use
 
