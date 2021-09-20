@@ -8,17 +8,17 @@
 - KittenList Screen:
   - On application startup all images retrieved from kitten API then combine with randomly name and description with loading indicator while images are being fetched to display in list is empty will show empty message.
   - User can filter number to displayed kitten list (30/50/100)
-  - Show Online/Offline on Header right
-  - Show specific count specify count of displayed kitten items in header with title
+  - Show Online/Offline status on the Header right
+  - Show specific count  of displayed kitten items in header with title
 - KittenItem Screen:
 
   - header with go back and title
-  - in Kitten item screen render kitten image at the top followed by it’s name and display kitten description below (Lorem Ipsum).
+  - in Kitten item screen render kitten image at the top followed by it’s name and display kitten description below.
 
 - BONUS
   - Generate signed .apk file, release version in root folder: [app-release.apk](https://github.com/rimsila/kitten-app/blob/main/app-release.apk)
   - Write tests for some react-native component and utils
-  - Store kitten data in redux state and support offline mode and auto refetch when online
+  - Store kitten data in redux state and support offline mode and auto refetch data when online
 
 I have tried at my best in a few days to completed. Sorry for a bit late submit due to I have very busy in working days, I have try to setup React Native architecture with latest and following best practice.
 
@@ -52,13 +52,14 @@ KittenApp is React Native application. This project is configured with redux, re
 1. Clone this repo, `https://github.com/rimsila/kitten-app.git`
 2. Go to project's root directory, `cd kitten-app`
 3. Run `yarn` to install dependencies
-4. Run `yarn pod or yarn pod m1` to install pod on ios
+4. Run `yarn pod or yarn pod-m1` to install pod on ios
 5. Start developments:
 
    - On Android:
      - Run `react-native run-android` or Use Android Studio (Recommended)
    - On iOS:
-     - Run `yarn react-native run-ios` Or
+     - Run `yarn react-native run-ios` 
+ Or
      - Open `yarn xcode` in Xcode
      - Hit `Run` after selecting the desired device
 
